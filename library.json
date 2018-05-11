@@ -10,20 +10,16 @@
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/me-no-dev/ESPAsyncWebServer.git"
+    "url": "https://github.com/miligram/ESPAsyncWebServer.git"
   },
   "version": "1.1.1",
   "license": "LGPL-3.0",
   "frameworks": "arduino",
-  "platforms": ["espressif8266", "espressif32"],
+  "platforms": ["espressif8266"],
   "dependencies": [
     {
       "name": "ESPAsyncTCP",
       "platforms": "espressif8266"
-    },
-    {
-      "name": "AsyncTCP",
-      "platforms": "espressif32"
     }
   ]
 }

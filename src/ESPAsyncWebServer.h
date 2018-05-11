@@ -28,10 +28,7 @@
 
 #include "StringArray.h"
 
-#ifdef ESP32
-#include <WiFi.h>
-#include <AsyncTCP.h>
-#elif defined(ESP8266)
+#if defined(ESP8266)
 #include <ESP8266WiFi.h>
 #include <ESPAsyncTCP.h>
 #else
@@ -445,7 +442,5 @@ public:
 
 #include "WebResponseImpl.h"
 #include "WebHandlerImpl.h"
-#include "AsyncWebSocket.h"
-#include "AsyncEventSource.h"
 
 #endif /* _AsyncWebServer_H_ */
